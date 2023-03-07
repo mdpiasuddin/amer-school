@@ -1,5 +1,6 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
+import ShowQuize from "../ShowQuize/ShowQuize";
 import "./banner.css";
 
 const Banner = () => {
@@ -50,6 +51,7 @@ const Banner = () => {
           </Carousel.Item>
         </Carousel>
       </section>
+      <ShowQuize></ShowQuize>
     </div>
   );
 };

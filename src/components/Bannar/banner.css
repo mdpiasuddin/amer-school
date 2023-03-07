@@ -1,6 +1,12 @@
 .banner {
   height: 500px;
 }
+.menu-text {
+  font-size: 20px;
+}
+.logo-text {
+  font-size: 50px;
+}
 .name_scholl {
   font-size: 70px;
   color: rgba(8, 8, 228, 0.71);
