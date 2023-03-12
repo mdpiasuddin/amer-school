@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
-import ShowQuize from "../ShowQuize/ShowQuize";
+
 import "./banner.css";
 
 const Banner = () => {
@@ -15,9 +15,11 @@ const Banner = () => {
               alt="First slide"
             />
             <Carousel.Caption>
-              <h1 className="name_scholl">Amer Scholl ltd</h1>
+              <h1 className="name_scholl f-5">Amer Scholl ltd</h1>
               <p className="details">
-                Amer school is a leading online education service system{" "}
+                <strong>
+                  Amer school is a leading online education service system{" "}
+                </strong>
               </p>
             </Carousel.Caption>
           </Carousel.Item>
@@ -51,7 +53,6 @@ const Banner = () => {
           </Carousel.Item>
         </Carousel>
       </section>
-      <ShowQuize></ShowQuize>
     </div>
   );
 };

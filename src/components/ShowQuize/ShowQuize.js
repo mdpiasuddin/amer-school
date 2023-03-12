@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Container } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import QuizeCart from "../QuizeCart/QuizeCart";
 import "./showQuize.css";
 
@@ -18,11 +18,14 @@ const ShowQuize = () => {
             <h1>Start quize </h1>
             <p>Here are some quize. Evrebody can take challange from it</p>
           </div>
-          <div className="totalcart">
+          <Row>
             {showquize.map((i) => (
-              <QuizeCart key={i.id} i={i}></QuizeCart>
+              <Col lg={4}>
+                {" "}
+                <QuizeCart key={i.id} i={i}></QuizeCart>
+              </Col>
             ))}
-          </div>
+          </Row>
         </Container>
       </section>
     </div>

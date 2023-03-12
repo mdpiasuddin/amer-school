@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./menubar.css";
 import { Nav, Navbar, Container } from "react-bootstrap";
 import Banner from "../Bannar/Banner";
 
@@ -19,19 +19,19 @@ const Menu = () => {
                   <Nav.Link href="/home" className="text-white">
                     Home
                   </Nav.Link>
-                  <Nav.Link href="/srclink" className="text-white">
+                  <Nav.Link href="/topic" className="text-white">
                     Topic
                   </Nav.Link>
-                  <Nav.Link href="/link" className="text-white">
+                  <Nav.Link href="/static" className="text-white">
                     Static
                   </Nav.Link>
-                  <Nav.Link href="/srclink" className="text-white">
+                  <Nav.Link href="/blog" className="text-white">
                     Blog
                   </Nav.Link>
-                  <Nav.Link href="/link" className="text-white">
+                  <Nav.Link href="/aboutus" className="text-white">
                     ABout us
                   </Nav.Link>
-                  <Nav.Link href="/link" className="text-white">
+                  <Nav.Link href="/faq" className="text-white">
                     FAQ
                   </Nav.Link>
                 </Nav>
@@ -41,7 +41,6 @@ const Menu = () => {
           </Container>
         </Navbar>
       </section>
-      <Banner></Banner>
     </div>
   );
 };

@@ -1,0 +1,9 @@
+.optionss {
+  font-size: 20px;
+  border: 2px solid blue;
+  width: 800px;
+  margin: 0 auto;
+}
+.optionss input {
+  display: inline;
+}
