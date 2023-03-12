@@ -1,4 +1,5 @@
 import React from "react";
+import Calculation from "../Calculation/Calculation";
 import ShowQuestion from "../ShowQuestion/ShowQuestion";
 
 const Questions = ({ questions }) => {
