@@ -1,10 +1,8 @@
 import React from "react";
 import Options from "../Options/Options";
 import "../Calculation/Calculation";
-import Calculation from "../Calculation/Calculation";
 
-const ShowQuestion = ({ i }) => {
-  console.log(i);
+const ShowQuestion = ({ i, count }) => {
   const { id, question, options, correctAnswer } = i;
 
   return (
@@ -14,6 +12,7 @@ const ShowQuestion = ({ i }) => {
         key={id}
         options={options}
         correctanswer={correctAnswer}
+        count={count}
       ></Options>
     </div>
   );
