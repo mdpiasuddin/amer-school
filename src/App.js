@@ -5,12 +5,15 @@ import Main from "./components/Main";
 import MenuBaner from "./components/MenuBaner";
 import ShowQuize from "./components/ShowQuize/ShowQuize";
 import StartQuize from "./components/StartQuize/StartQuize";
+import ErrorPage from "./components/errorpage/ErrorPage";
+import Static from "./components/Static/Static";
 
 function App() {
   const router = createBrowserRouter([
     {
       path: "/",
       element: <Main></Main>,
+      errorElement: <ErrorPage></ErrorPage>,
       children: [
         {
           path: "/",
@@ -32,6 +35,13 @@ function App() {
             );
           },
           element: <StartQuize></StartQuize>,
+        },
+        {
+          path: "/static",
+          loader: async () => {
+            return fetch("https://openapi.programming-hero.com/api/quiz");
+          },
+          element: <Static></Static>,
         },
       ],
     },
